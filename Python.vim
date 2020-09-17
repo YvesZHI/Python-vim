@@ -33,6 +33,7 @@ let g:clang_cpp_options='-std=c++11 -stdlib=libc++'
 autocmd BufWinLeave * silent! TlistClose
 autocmd VimLeave * silent! !eval 'rm newtags .tags 2>/dev/null'
 autocmd VimEnter * NERDTree
+autocmd VimEnter * execute "let g:projectPath = expand('%:p:h')"
 autocmd VimEnter * execute "normal j"
 autocmd VimEnter * execute "call DeleteBufferImg()"
 function! BufferDelete(id)
