@@ -30,6 +30,7 @@ let g:clang_cpp_options='-std=c++11 -stdlib=libc++'
 "    autocmd! BufReadPost ~/.vim/banner.txt setlocal readonly
 "augroup END
 
+autocmd BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>120v.\+', -1)
 autocmd BufWinLeave * silent! TlistClose
 autocmd VimLeave * silent! !eval 'rm newtags .tags 2>/dev/null'
 autocmd VimEnter * NERDTree
