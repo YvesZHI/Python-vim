@@ -9,6 +9,8 @@ set ruler
 
 set showcmd
 set showmatch
+set autoread
+set diffopt+=vertical
 
 set foldmethod=indent
 set foldlevelstart=99
@@ -98,6 +100,7 @@ if exists('Python')
     Plugin 'Yggdroot/indentLine'
     Plugin 'jiangmiao/auto-pairs'
     Plugin 'tpope/vim-repeat'
+    Plugin 'tpope/vim-fugitive'
     Plugin 'YvesZHI/vim-code-dark'
     Plugin 'vim-python/python-syntax'
     Plugin 'YvesZHI/killersheep'
