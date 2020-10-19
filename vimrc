@@ -89,7 +89,8 @@ if exists('Python')
 
     " options
     "Plugin 'Valloric/YouCompleteMe'
-    Plugin 'scrooloose/nerdtree'
+    Plugin 'preservim/nerdtree' |
+                \ Plugin 'Xuyuanp/nerdtree-git-plugin'
     Plugin 'ctrlpvim/ctrlp.vim'
     Plugin 'dense-analysis/ale'
     Plugin 'scrooloose/nerdcommenter'

@@ -87,7 +87,7 @@ To get more information about usage, click on the links at the References below.
 ### References ###
 https://github.com/VundleVim/Vundle.vim<br>
 https://github.com/Valloric/YouCompleteMe<br>
-https://github.com/scrooloose/nerdtree<br>
+https://github.com/preservim/nerdtree<br>
 https://github.com/dense-analysis/ale<br>
 https://github.com/ctrlpvim/ctrlp.vim<br>
 https://github.com/scrooloose/nerdcommenter<br>
@@ -99,6 +99,7 @@ https://github.com/Yggdroot/indentLine<br>
 https://github.com/jiangmiao/auto-pairs<br>
 https://github.com/tpope/vim-repeat<br>
 https://github.com/tpope/vim-fugitive<br>
+https://github.com/Xuyuanp/nerdtree-git-plugin<br>
 https://github.com/YvesZHI/vim-code-dark<br>
 https://github.com/vim-python/python-syntax<br>
 https://github.com/YvesZHI/killersheep<br>
