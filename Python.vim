@@ -81,6 +81,8 @@ autocmd FileType python setlocal equalprg=autopep8\ -
 "    endfun
 "augroup END
 
+autocmd User FugitiveChanged NERDTreeRefreshRoot
+
 let g:NERDTreeWinSize=24
 let baseFileType='\.yaml\|\.yml\|\.json\|\.toml\|\.xml\|\.html\|\.sh'
 let currentFileType='\.py'
