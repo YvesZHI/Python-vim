@@ -29,8 +29,10 @@ NA
 Execute `source ~/.bashrc` after the installation to make `vimc` work.<br>
 To start a go project, execute `vimc` at the root of the project.<br>
 
+##### Normal Mode
 `:Q<CR>`: quit vim and all plugins<br>
 `:W<CR>`: save all & `:Q<CR>`<br>
+`<C-k>` : save<br>
 
 `\tg`: open or close the window of taglist<br>
 
@@ -48,9 +50,6 @@ To start a go project, execute `vimc` at the root of the project.<br>
 
 `+`: increase width of window towards left<br>
 `-`: decrease width of window towards right<br>
-
-`<C-j>`: <INSERT mode> move cursor backwards out of parenthesis<br>
-`<C-k>`: <INSERT mode or NORMAL mode> goto normal mode and save<br>
 
 `\cc`: comment one line<br>
 `\cv`: comment one line with next delimiter<br>
@@ -75,6 +74,14 @@ similar shortcuts: `\"` and `\\"`, `\(` and `\\(`, `\[` and `\\[`, `\{` and `\\{
 `<F12>`: goto definition<br>
 `<C-o>`: go backword<br>
 `<C-i>`: go forward<br>
+
+##### Insert Mode
+`<C-j>`: move cursor backwards out of parenthesis<br>
+`<C-k>`: goto normal mode and save<br>
+`<C-e>`: move the current to the end of next word<br>
+`<C-l>`: move the cursor to the end of line<br>
+`<C-h>`: move the cursor to the first non-blank in the line<br> 
+`<C-\>`: delete the word under the cursor<br>
 
 To get more information about usage, click on the links at the References below.
 
