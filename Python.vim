@@ -60,26 +60,20 @@ endif
 
 autocmd FileType python setlocal equalprg=autopep8\ -
 
-"augroup templates
-"    autocmd!
-"    autocmd BufRead *.h,*.hpp,*.c,*.cpp,*.cc call s:ApplyTemplate()
-"
-"    function! s:ApplyTemplate()
-"        if getfsize(expand('%')) == 0
-"            if expand('%:t:r') == 'main'
-"                execute "0r ~/.vim/templates/" . expand('%:t')
-"            else
-"                execute "0r ~/.vim/templates/template." . expand('%:e')
-"                if expand('%:e') == 'h' || expand('%:e') == 'hpp'
-"                    execute "%s/this_should_be_replaced/\\=toupper('" . expand('%:t') . "')" . "/e"
-"                    execute "%s/\\./_" . "/e"
-"                elseif expand('%:e') == 'c' || expand('%:e') == 'cpp' || expand('%:e') == 'cc'
-"                    execute "%s/this_should_be_replaced/" . expand('%:t:r') . "/e"
-"                endif
-"            endif
-"        endif
-"    endfun
-"augroup END
+augroup templates
+    autocmd!
+    autocmd BufRead *.py call s:ApplyTemplate()
+
+    function! s:ApplyTemplate()
+        if getfsize(expand('%')) == 0
+            if expand('%:t:r') == 'main'
+                execute "0r ~/.vim/templates/" . expand('%:t')
+            else
+                execute "0r ~/.vim/templates/template." . expand('%:e')
+            endif
+        endif
+    endfun
+augroup END
 
 autocmd User FugitiveChanged NERDTreeRefreshRoot
 
