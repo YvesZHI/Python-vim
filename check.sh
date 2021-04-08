@@ -11,3 +11,5 @@ hash git 2>/dev/null || { echo >&2 "git is not installed.  Aborting."; exit 1; }
 hash vim 2>/dev/null || { echo >&2 "vim is not installed.  Aborting."; exit 1; }
 hash autoreconf 2>/dev/null || { echo >&2 "automake is not installed.  Aborting."; exit 1; }
 hash pkg-config 2>/dev/null || { echo >&2 "pkg-config is not installed.  Aborting."; exit 1; }
+hash flake8 2>/dev/null || { echo >&2 "flake8 is not installed.  Aborting."; exit 1; }
+hash autopep8 2>/dev/null || { echo >&2 "autopep8 is not installed.  Aborting."; exit 1; }
